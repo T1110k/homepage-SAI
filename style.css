@@ -1,80 +1,103 @@
-/* 全体の基本スタイル */
+/* 自然観と高級感を取り入れたナチュラルモダンスタイル */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f6f4; /* 落ち着いた白っぽい背景 */
-  color: #333; /* 濃いグレーの文字 */
-  line-height: 1.6;
+  background-color: #f1ede7;
+  color: #3a3a3a;
+  line-height: 1.7;
 }
 
-/* ヘッダー */
 header {
-  background-color: #8d7964; /* 落ち着いた茶色 */
+  background-color: #b9a88f;
   color: white;
-  padding: 20px 0;
+  padding: 28px 0;
   text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.4em;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  opacity: 0.75;
 }
 
-/* メインビジュアル */
 .main-visual {
-  background-color: #d9d5d2; /* 優しいグレーベージュ */
+  background-color: #e8e2d8;
   text-align: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
+  background-image: url('IMG/IMG_0363.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* モザイク風背景を文字の後ろに追加 */
+.main-visual h2, .main-visual p {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白背景 */
+  backdrop-filter: blur(6px); /* モザイク風にぼかす */
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #2a2a2a;
+  text-shadow: none;
 }
 
 .main-visual h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.6em;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
 }
 
 .main-visual p {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
-/* セクション共通スタイル */
 section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+  padding: 60px 24px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
 section h2 {
-  border-bottom: 2px solid #8d7964;
-  padding-bottom: 5px;
-  color: #5c5045; /* グレーがかった茶色 */
+  border-left: 6px solid #b9a88f;
+  padding-left: 14px;
+  color: #4c443a;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-/* フッター */
 footer {
-  background-color: #8d7964;
+  background-color: #b9a88f;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  font-size: 0.9em;
-  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 0.95em;
+  margin-top: 50px;
 }
